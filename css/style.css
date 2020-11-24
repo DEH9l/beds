@@ -1,9 +1,14 @@
+@charset "UTF-8";
 @import url(bootstrap.css);
+p {
+  margin-block-start: 0;
+  margin-block-end: 0; }
+
 header {
   background-image: url("../images/top-bg.jpg");
   background-size: 100%; }
   header .header-text p {
-    line-height: 0.7; }
+    line-height: 1; }
     header .header-text p:first-of-type {
       font-size: 100px; }
     header .header-text p:nth-of-type(2) {
@@ -11,26 +16,99 @@ header {
     header .header-text p:last-of-type {
       font-size: 62px;
       color: #e36d77; }
-    header .header-text p__btn {
-      font-size: 22px;
-      text-decoration: none; }
 
 .pink-line {
   background-color: #e36d77; }
+
+.top-discription {
+  padding-top: 200px; }
+  .top-discription p:first-of-type {
+    font-size: 22px; }
+
+.beds .beds__item .beds__item__disc div:first-of-type p:first-of-type {
+  font-size: 18px; }
+
+.visuhide {
+  position: absolute !important;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px); }
+
+.star__container:hover .star__item, .star__radio:checked ~ .star__item {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0); }
+
+.star__container:not(:hover) > .star__radio:nth-of-type(1):checked ~ .star__item:nth-of-type(1) ~ .star__item, .star__container:not(:hover) > .star__radio:nth-of-type(2):checked ~ .star__item:nth-of-type(2) ~ .star__item, .star__container:not(:hover) > .star__radio:nth-of-type(3):checked ~ .star__item:nth-of-type(3) ~ .star__item, .star__container:not(:hover) > .star__radio:nth-of-type(4):checked ~ .star__item:nth-of-type(4) ~ .star__item, .star__container:not(:hover) > .star__radio:nth-of-type(5):checked ~ .star__item:nth-of-type(5) ~ .star__item, .star__item, .star__item:hover ~ .star__item {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1); }
+
+.star__radio:nth-of-type(1):checked ~ .star__item:nth-of-type(1)::before {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  transition-timing-function: cubic-bezier(0.5, 1.5, 0.25, 1); }
+
+.star__radio:nth-of-type(2):checked ~ .star__item:nth-of-type(2)::before {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  transition-timing-function: cubic-bezier(0.5, 1.5, 0.25, 1); }
+
+.star__radio:nth-of-type(3):checked ~ .star__item:nth-of-type(3)::before {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  transition-timing-function: cubic-bezier(0.5, 1.5, 0.25, 1); }
+
+.star__radio:nth-of-type(4):checked ~ .star__item:nth-of-type(4)::before {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  transition-timing-function: cubic-bezier(0.5, 1.5, 0.25, 1); }
+
+.star__radio:nth-of-type(5):checked ~ .star__item:nth-of-type(5)::before {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  transition-timing-function: cubic-bezier(0.5, 1.5, 0.25, 1); }
+
+.star__container {
+  display: flex;
+  margin: auto;
+  transition: box-shadow .3s ease; }
+
+.star__item {
+  display: inline-flex;
+  width: 1.25em;
+  height: 1.5em; }
+
+.star__item::before {
+  content: "⭐️";
+  display: inline-block;
+  margin: auto;
+  font-size: .75em;
+  vertical-align: top;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform-origin: 50% 33.3%;
+  transform-origin: 50% 33.3%;
+  transition: -webkit-transform .3s ease-out;
+  transition: transform .3s ease-out;
+  transition: transform .3s ease-out, -webkit-transform .3s ease-out; }
 
 @media screen and (max-width: 768px) {
   header {
     background-image: url("../images/top-bg.jpg");
     background-size: auto; }
-    header .header-text p {
-      line-height: 0.7; }
-      header .header-text p:first-of-type {
-        font-size: 24px; }
-      header .header-text p:nth-of-type(2) {
-        font-size: 16px; }
-      header .header-text p:last-of-type {
-        font-size: 18px; }
-      header .header-text p__btn {
-        font-size: 14px; } }
+    header .header-text p:first-of-type {
+      font-size: 30px; }
+    header .header-text p:nth-of-type(2) {
+      font-size: 20px; }
+    header .header-text p:last-of-type {
+      font-size: 24px; }
+    header .header-text p__btn {
+      font-size: 14px; }
+
+  .pink-line p {
+    font-size: 12px; }
+
+  .top-discription {
+    padding-top: 20px; } }
 
 /*# sourceMappingURL=style.css.map */
