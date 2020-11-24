@@ -1,0 +1,36 @@
+@import url(bootstrap.css);
+header {
+  background-image: url("../images/top-bg.jpg");
+  background-size: 100%; }
+  header .header-text p {
+    line-height: 0.7; }
+    header .header-text p:first-of-type {
+      font-size: 100px; }
+    header .header-text p:nth-of-type(2) {
+      font-size: 50px; }
+    header .header-text p:last-of-type {
+      font-size: 62px;
+      color: #e36d77; }
+    header .header-text p__btn {
+      font-size: 22px;
+      text-decoration: none; }
+
+.pink-line {
+  background-color: #e36d77; }
+
+@media screen and (max-width: 768px) {
+  header {
+    background-image: url("../images/top-bg.jpg");
+    background-size: auto; }
+    header .header-text p {
+      line-height: 0.7; }
+      header .header-text p:first-of-type {
+        font-size: 24px; }
+      header .header-text p:nth-of-type(2) {
+        font-size: 16px; }
+      header .header-text p:last-of-type {
+        font-size: 18px; }
+      header .header-text p__btn {
+        font-size: 14px; } }
+
+/*# sourceMappingURL=style.css.map */

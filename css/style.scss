@@ -1,0 +1,60 @@
+@import "bootstrap.css";
+
+header{
+  background-image: url("../images/top-bg.jpg");
+  background-size: 100%;
+  .header-text{
+    p{
+      line-height: 0.7;
+      &:first-of-type{
+        font-size: 100px;
+      }
+      &:nth-of-type(2){
+        font-size: 50px;
+      }
+      &:last-of-type{
+        font-size: 62px;
+        color: #e36d77;
+      }
+    }
+  }
+}
+.pink-line{
+  background-color: #e36d77;
+}
+.top-discription{
+  padding-top: 200px;
+  p{
+    &:first-of-type{
+      font-size: 22px;
+    }
+  }
+}
+
+
+@media screen and(max-width: 768px) {
+  header {
+    background-image: url("../images/top-bg.jpg");
+    background-size: auto;
+    .header-text {
+      p {
+        line-height: 0.7;
+
+        &:first-of-type {
+          font-size: 24px;
+        }
+
+        &:nth-of-type(2) {
+          font-size: 16px;
+        }
+
+        &:last-of-type {
+          font-size: 18px;
+        }
+        &__btn {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
