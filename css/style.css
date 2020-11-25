@@ -25,8 +25,35 @@ header {
   .top-discription p:first-of-type {
     font-size: 22px; }
 
-.beds .beds__item .beds__item__disc div:first-of-type p:first-of-type {
+.beds .beds__item .beds__item__disc .item-lost:first-of-type p:first-of-type {
   font-size: 18px; }
+.beds .beds__item__sale {
+  position: absolute;
+  top: -35px;
+  left: 25px;
+  background-color: #df6d9e;
+  padding: 15px 5px;
+  border-radius: 50%;
+  color: white;
+  font-size: 25px; }
+.beds .beds__item__price {
+  vertical-align: top;
+  width: 230px; }
+  .beds .beds__item__price .new-price {
+    font-size: 70px; }
+  .beds .beds__item__price .old-price p:first-of-type {
+    font-size: 40px;
+    text-decoration: line-through;
+    text-decoration-color: #df6d9e; }
+  .beds .beds__item__price .old-price p:last-of-type {
+    font-size: 20px;
+    text-align: left; }
+.beds .item-buy-btn {
+  background-color: #02b9d4; }
+  .beds .item-buy-btn a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px; }
 
 .visuhide {
   position: absolute !important;
@@ -79,7 +106,7 @@ header {
   height: 1.5em; }
 
 .star__item::before {
-  content: "⭐️";
+  content: "тнРя╕П";
   display: inline-block;
   margin: auto;
   font-size: .75em;

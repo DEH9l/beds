@@ -39,7 +39,7 @@ header{
 .beds{
   .beds__item{
     .beds__item__disc{
-      div{
+      .item-lost{
         &:first-of-type{
           p{
             &:first-of-type{
@@ -50,26 +50,45 @@ header{
       }
     }
   }
+  .beds__item__sale{
+    position: absolute;
+    top: -35px;
+    left: 25px;
+    background-color: #df6d9e;
+    padding: 15px 5px;
+    border-radius: 50%;
+    color: white;
+    font-size: 25px;
+  }
+  .beds__item__price{
+    vertical-align: top;
+    width: 230px;
+    .new-price{
+        font-size: 70px;
+      }
+      .old-price{
+        p{
+          &:first-of-type {
+            font-size: 40px;
+            text-decoration: line-through;
+            text-decoration-color: #df6d9e;
+          }
+        &:last-of-type{
+          font-size: 20px;
+          text-align: left;
+        }
+      }
+    }
+  }
+  .item-buy-btn{
+    background-color: #02b9d4;
+    a {
+      text-decoration: none;
+      color: white;
+      font-size: 25px;
+    }
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .visuhide {
