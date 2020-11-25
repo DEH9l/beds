@@ -38,6 +38,26 @@ header{
 
 .beds{
   .beds__item{
+    .my-rating-stars{
+      .rating-stars__item{
+        color: gray;
+
+        cursor: pointer;
+        font-size: 20px;
+        transition: .2s;
+      }
+      .rating-stars__item:hover,
+      .rating-stars__item:hover ~ .rating-stars__item {
+        color: gold;
+      }
+    }
+    .my-rating-stars[data-total-value="1"] .rating-stars__item:nth-child(n+5),
+    .my-rating-stars[data-total-value="2"] .rating-stars__item:nth-child(n+4),
+    .my-rating-stars[data-total-value="3"] .rating-stars__item:nth-child(n+3),
+    .my-rating-stars[data-total-value="4"] .rating-stars__item:nth-child(n+2),
+    .my-rating-stars[data-total-value="5"] .rating-stars__item:nth-child(n+1){
+      color: orange;
+    }
     .beds__item__disc{
       .item-lost{
         &:first-of-type{
@@ -91,7 +111,7 @@ header{
 }
 
 
-.visuhide {
+/*.visuhide {
   position: absolute !important;
   overflow: hidden;
   width: 1px;
@@ -157,7 +177,7 @@ header{
   transition: -webkit-transform .3s ease-out;
   transition: transform .3s ease-out;
   transition: transform .3s ease-out, -webkit-transform .3s ease-out;
-}
+}*/
 
 
 @media screen and(max-width: 768px) {
