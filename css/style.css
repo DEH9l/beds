@@ -69,6 +69,29 @@ header {
     color: white;
     font-size: 25px; }
 
+.review-bg {
+  background-color: #f5f2ec; }
+
+.review__title {
+  font-size: 60px; }
+
+.text__name {
+  font-weight: bolder;
+  font-size: 25px; }
+
+.text__review {
+  font-size: 20px; }
+
+.how-order .how-order__title {
+  font-size: 60px;
+  font-weight: bold; }
+.how-order .how-order__item p {
+  font-size: 18px;
+  padding-top: 1rem; }
+
+footer {
+  background-color: #4b5262; }
+
 /*.visuhide {
   position: absolute !important;
   overflow: hidden;
@@ -123,7 +146,7 @@ header {
   height: 1.5em;
 }
 .star__item::before {
-  content: "⭐️";
+  content: "тнРя╕П";
   display: inline-block;
   margin: auto;
   font-size: .75em;
@@ -153,6 +176,13 @@ header {
     font-size: 12px; }
 
   .top-discription {
-    padding-top: 20px; } }
+    padding-top: 20px; }
+
+  .review__title {
+    font-size: 30px;
+    text-align: center; }
+
+  .how-order .how-order__title {
+    font-size: 30px; } }
 
 /*# sourceMappingURL=style.css.map */
