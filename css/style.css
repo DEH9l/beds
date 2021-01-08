@@ -88,6 +88,8 @@ header {
 .how-order .how-order__item p {
   font-size: 18px;
   padding-top: 1rem; }
+.how-order .how-order__item img {
+  width: 100%; }
 
 footer {
   background-color: #4b5262; }
